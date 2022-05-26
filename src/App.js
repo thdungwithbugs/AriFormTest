@@ -14,7 +14,7 @@ const schema = yup.object({
     .string()
     .required("Mật khẩu không được để trống")
     .matches(
-      /^(?=.*[A-Za-z])(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]/,
+      /^(?=.*[A-Za-z])(?=.*[A-Z])(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]/,
       "Mật khẩu phải có ít nhất 1 kí tự viết hoa và 1 kí tự đặc biệt"
     )
     .min(6, "Mật khẩu phải từ 6 đến 20 kí tự")
